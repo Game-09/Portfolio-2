@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: "MarsBold"; 
+    src: url("../9-урок/fonts/Mars/Mars\ Bold.otf") format("truetype");
+    src: url("../9-урок/fonts/Mars/Mars\ Bold.ttf") format("truetype");  
+    font-style: normal; 
+    font-weight: bold; 
+}
+@font-face {
+    font-family: "Kusanagi"; 
+    src: url("../9-урок/fonts/Kusanagi/GD-Fonts.txt") format("truetype");
+    src: url("../9-урок/fonts/Kusanagi/Kusanagi.otf") format("truetype");  
+    font-style: normal; 
+    font-weight: bold; 
+}
+*{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.here{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid crimson;*/
+    padding-left: 20%;
+    padding-right: 8%;
+
+    
+}
+
+.logo{
+    color: white;
+    font-size: 60px;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+b{
+    color: crimson;
+}
+
+
+nav ul{
+    display: flex;
+
+}
+li{
+    list-style: none;
+    position: relative;
+    padding: 12px 25px;
+    margin-top: -80px;  
+    color: #a0a0a0;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+
+}
+li:after{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 30px;
+    transition: 0.3s;
+}
+li:hover{
+    color: white;
+}
+li:hover:after{
+    width: 100%;
+}
+.btn {
+    padding: 10px 25px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: 1s;
+    margin-top: -95px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: crimson;
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+/*------------content-1--------------------*/
+.content-1{
+ font-weight: 900;
+}
+.hello,
+h1,
+.dev,
+.search_box{
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
+    color: white;
+}
+.hello{
+    color: #F08080;
+}
+h1{
+    font-family: "Kusanagi"; 
+    font-size: 80px;
+}
+h1 b{
+    font-family: "Kusanagi"; 
+    font-size: 120px;
+}
+.search_box{
+	position: relative;
+	width: 400px;
+	height: 50px;
+    transition: 0.8s;
+}
+
+.search_box .inputs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	font-size: 18px;
+    border-color: crimson;
+}
+
+.search_box .btn2{
+	position: absolute;
+	background: crimson;
+	cursor: pointer;
+    width: 100px;
+	height: 35px;
+	top: 8px;
+	right: 5px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search_box .inputs{
+	border-radius: 50px;
+}
+.search_box .btn2{
+	border-radius: 50px;
+}
+
+.search_box:hover{
+    color: crimson;
+    transition: 0.7s;
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 10px 5px 10px 10px white;
+}
+
+
